@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background-image: url("path/to/your/image.jpg");
+  background-repeat: no-repeat;
+  block-size: cover;
+}
+.container {
+  background-color: #fdfaca;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container > h1 {
+  color: #3b3b3b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#task-input {
+  width:80%
+
+}
+.task-area {
+  border: 1px solid lightgrey;
+  margin-top: 2rem;
+}
+.task-area>.task-tabs>div {
+  font-style: italic;
+  font-weight: 600;
+  
+}
+
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+.task-tabs div {
+  padding: 1rem;
+}
+
+#under-line {
+  height: 4px;
+  background-color: pink;
+  position: absolute;
+  width: 80px;
+  left: 0;
+  top: 100%;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.task-done {
+  text-decoration: line-through;
+  background-color: #ddd;
+}
+
+#task-input {
+  margin-right: 8px;
+}
+#add-button {
+  border: none;
+}
+#add-button:hover {
+  color: #fff;
+  background-color: #3b3b3b;
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+.delete-btn {
+  background-color: #ff4040;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.btn-click:hover {
+  color: #fff;
+  background-color: #000;
+  transition-duration: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .container > h1 {
+    font-size: 2rem;
+  }
+  #under-line {
+    width: 60px;
+  }
+  .btn-click:hover {
+    color: #fff;
+    background-color: #ddd;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container > h1 {
+    font-size: 1rem;
+  }
+  #under-line {
+    width: 40px;
+  }
+}
